@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "dogos",
+  "version": "${version}",
+  "name": "Dogos",
+  "description": "A mod that adds tons of blocks and items to improve dogs!",
+  "authors": [
+    "Skitbet"
+  ],
+  "contact": {
+    "repo": "https://github.com/Skitbet/Dogos"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/dogos/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.skitbet.dogos.client.DogosClient"
+    ],
+    "main": [
+      "com.skitbet.dogos.common.DogosMod"
+    ],
+    "fabric-datagen": [
+      "com.skitbet.dogos.common.data.DogosModDataGenerator"
+    ]
+  },
+  "mixins": [
+    "dogos.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "geckolib": ">=4.2",
+    "minecraft": "${minecraft_version}"
+  }
+}
